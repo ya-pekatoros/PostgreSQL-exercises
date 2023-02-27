@@ -1,6 +1,6 @@
 /* Показать работников у которых нет почты или почта не в корпоративном домене (домен dualbootpartners.com) */
 
-SELECT name, lastname from employees WHERE email NOT LIKE '%dualbootpartners.com';
+SELECT name, lastname from employees WHERE email NOT LIKE '%dualbootpartners.com' OR email IS NULL;
 
 /* Получить список работников нанятых в последние 30 дней */
 
